@@ -1,0 +1,50 @@
+/* Full-screen center alignment */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #fef3c7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.board-container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.status {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #1f2937;
+  height: 70px;
+  width: 70px;
+  margin: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.square:hover {
+  background: #e0e7ff;
+  transform: scale(1.05);
+}
